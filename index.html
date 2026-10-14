@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ Olaf — LED Shows | Coming Soon</title>
+    <style>
+      :root {
+        --bg: #0a0a0f;
+        --panel: rgba(18, 18, 24, 0.76);
+        --panel-border: rgba(255, 255, 255, 0.18);
+        --text: #f5f7fb;
+        --muted: rgba(245, 247, 251, 0.72);
+        --accent-pink: #ff4d8d;
+        --accent-cyan: #35e0d3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 18px;
+        background:
+          radial-gradient(circle at top, rgba(53, 224, 211, 0.18), transparent 35%),
+          radial-gradient(circle at bottom right, rgba(255, 77, 141, 0.18), transparent 35%),
+          var(--bg);
+      }
+
+      .page {
+        width: min(1100px, 100%);
+        background: rgba(12, 12, 16, 0.7);
+        border: 1px solid var(--panel-border);
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero {
+        text-align: center;
+        padding: 56px 20px 24px;
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        font-size: 0.76rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.6rem, 6vw, 5rem);
+        line-height: 0.96;
+        letter-spacing: -0.06em;
+      }
+
+      h1 span {
+        display: block;
+        background: linear-gradient(90deg, var(--accent-pink), var(--accent-cyan));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .lead {
+        max-width: 620px;
+        margin: 22px auto 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 2vw, 1.18rem);
+        line-height: 1.65;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        padding: 18px 20px 10px;
+      }
+
+      .card {
+        position: relative;
+        min-height: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .card--dj {
+        background-image: url("images/WhatsApp%20Image%202026-01-21%20at%2021.12.57.jpeg");
+      }
+
+      .card--led {
+        background-image: url("images/Luminous%20KIOK.jpg");
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(10,10,15,0.84), rgba(10,10,15,0.2));
+      }
+
+      .card__label {
+        position: absolute;
+        left: 22px;
+        bottom: 22px;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(12, 12, 16, 0.38);
+        backdrop-filter: blur(4px);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .notice {
+        padding: 28px 20px 42px;
+        text-align: center;
+      }
+
+      .notice h2 {
+        margin: 0 0 10px;
+        font-size: clamp(1.5rem, 3vw, 2.7rem);
+        letter-spacing: -0.04em;
+      }
+
+      .notice p {
+        max-width: 600px;
+        margin: 0 auto 20px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .notice a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--text);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 12px 22px;
+        border-radius: 999px;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+
+      .notice a:hover {
+        transform: translateY(-1px);
+        border-color: rgba(53, 224, 211, 0.6);
+      }
+
+      footer {
+        padding: 0 20px 28px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.84rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      footer a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      @media (max-width: 760px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          min-height: 280px;
+        }
+
+        .hero {
+          padding-top: 42px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Enschede / DJ / lights</p>
+        <h1>Website update <span>coming soon</span></h1>
+        <p class="lead">
+          I am currently working on this site, it will contain bookings, event work, and LED projects.
+          The full experience will be live shortly.
+        </p>
+      </header>
+
+      <section class="cards" aria-label="Temporary site preview">
+        <article class="card card--dj" aria-label="DJ Olaf">
+          <div class="card__label">DJ Olaf</div>
+        </article>
+        <article class="card card--led" aria-label="LED shows">
+          <div class="card__label">LED shows</div>
+        </article>
+      </section>
+
+      <section class="notice" aria-label="Website update notice">
+        <h2>New content is on the way.</h2>
+        <p>
+          This temporary page is just a placeholder while the new website is being updated.
+          For now, follow the socials for the latest updates and bookings.
+        </p>
+        <a href="https://instagram.com/led.shows" target="_blank" rel="noopener noreferrer">
+          Follow @led.shows
+        </a>
+      </section>
+
+      <footer>
+        <p>DJ Olaf · LED Shows · <span id="year"></span></p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
