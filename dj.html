@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ Olaf — Boek een DJ-set</title>
+<meta name="description" content="Boek DJ Olaf voor clubavonden, feesten, bruiloften en festivals.">
+<!-- Fonts: Archivo (headings + text) and IBM Plex Mono (small labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- theme-dj = red accent, theme-led = cyan accent -->
+<body class="theme-dj">
+<a class="skip" href="#main">Naar inhoud</a>
+
+<!-- ===== NAVIGATIE (same on every page) ===== -->
+<header class="nav">
+  <a class="nav__logo" href="index.html">DJ Olaf</a>
+  <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <ul class="nav__links" id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="dj.html" aria-current="page">DJ Olaf</a></li>
+    <li><a href="led-shows.html">LED.shows</a></li>
+    <li><a href="about.html">Over</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a class="btn btn--dj" href="contact.html?type=dj">Boek nu</a></li>
+  </ul>
+</header>
+
+<main id="main">
+<!-- ===== HEADER (photo: images/dj.jpg) ===== -->
+<section class="page-head" style="background-image:url('images/dj background.jpg')">
+  <div class="wrap">
+    <span class="wip">Website in opbouw — inhoud volgt binnenkort</span>
+    <span class="label label--accent">DJ — Boekingen geopend</span>
+    <h1>DJ Olaf</h1>
+    <p class="lead">Allround DJ met een passie voor urban en pop muziek, ook voor internationale evenementen</p>
+    <div class="btn-row"><a class="btn btn--accent" href="contact.html?type=dj">Check beschikbaarheid</a><a class="btn" href="#muziek">Luister een mix</a></div>
+  </div>
+</section>
+
+<!-- ===== FEITEN voor boekers ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label label--accent">01 — Voor boekers</span>
+      <div><h2>Praktische informatie </h2></div>
+    </div>
+    <div class="facts reveal">
+      <div class="fact"><span class="label">Events</span><strong>Club / Privé / international</strong><span>Verjaardagen, jeugd, scholen, clubs</span></div>
+      <div class="fact"><span class="label">Setlengte</span><strong>1 – 5 uur</strong><span></span></div>
+      <div class="fact"><span class="label">Genres</span><strong>Urban/ pop</strong><span>Allround 0s 10s 20s</span></div>
+      <div class="fact"><span class="label">Extra</span><strong>licht show</strong><span>Op aanvraag erbij</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MUZIEK: replace .mix with your SoundCloud / Mixcloud embed ===== -->
+<section id="muziek">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label label--accent">02 — Muziek</span>
+      <div><h2>Laatste mix</h2>
+      <p class="lead">Hier komt de SoundCloud- of Mixcloud-speler.</p></div>
+    </div>
+    <div class="mix reveal">
+      <button class="mix__play" aria-label="Mix volgt binnenkort" disabled><svg width="18" height="18" viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="mix__wave"></div>
+      <span class="mix__meta">Binnenkort</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENDA: add a <li> per gig ===== -->
+<section id="agenda">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label label--accent">03 — Agenda</span>
+      <div><h2>Komende gigs</h2></div>
+    </div>
+    <ul class="gigs reveal">
+      <li><time>31.12.2026</time><strong>Oud &amp; Nieuw — Abdij 1472</strong><span class="gigs__info">allround</span><span>Kampen</span></li>
+      <li><time>14.01.2027</time><strong>Open feest — Vestingbar</strong><span class="gigs__info">international</span><span>Enschede</span></li>
+      <li><time>01.04.2027</time><strong>Dies feest — SA Proto</strong><span class="gigs__info">international</span><span>Enschede</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== VOORIGE GIGS: vervang de placeholders ===== -->
+<section id="vorige-gigs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label label--accent">04 — Eerdere optredens</span>
+      <div><h2>Afgelopen gigs</h2></div>
+    </div>
+    <div class="gigs-log reveal">
+      <ul class="gigs"> 
+        <li><time>07-11-2026</time><strong>Barbaars</strong><span class="gigs__info">Urban / Internationaal </span><span>Kampen</span></li>
+        <li><time>28/29-09-2026</time><strong>Kamp - SA Proto</strong><span class="gigs__info">Internationaal </span><span>Ootmarsum</span></li>
+        <li><time>05-09-2026</time><strong>Prive feest </strong><span class="gigs__info">80s / 90s </span><span>Kampen</span></li>
+        <li><time>26-08-2026</time><strong>Kick in - SA Proto</strong><span class="gigs__info">internationaal </span><span>Enschede</span></li>
+        <li><time>30-07-2026</time><strong>Openen Adbij 1472</strong><span class="gigs__info">internationaal</span><span>Kampen</span></li>
+        <li><time>01-06-2026</time><strong>terras - Vestingbar</strong><span class="gigs__info">house / internationaal</span><span>Enschede</span></li>
+        <li><time>30-05-2026</time><strong>Kamp - SA Proto</strong><span class="gigs__info">internationaal</span><span>Aalten</span></li>
+        <li><time>30-01-2026</time><strong>jeugdfeest 't ukien</strong><span class="gigs__info">pop</span><span>Kampen</span></li>
+        <li><time>16-01-2026</time><strong>lustrum feest - SA Proto</strong><span class="gigs__info">internationaal</span><span>Enschede</span></li>
+        <li><time>16-10-2025</time><strong>Schoolfeest 1e en 2e klas</strong><span class="gigs__info">allround jeugd</span><span>Kampen</span></li>
+        <li><time>10-10-2025</time><strong>Prive feest (oktoberfest)</strong><span class="gigs__info">oktoberfest/ carnaval</span><span>ijsselmuiden</span></li>
+        <li><time>27-09-2025</time><strong>Openen Adbij 1472</strong><span class="gigs__info">internationaal</span><span>Kampen</span></li>
+        <li><time>12-09-2025</time><strong>Prive feest (verjaardag)</strong><span class="gigs__info">allround / hardcore</span><span>Zwolle</span></li>
+        <li><time>30-08-2025</time><strong>Prive feest (verjaardag)</strong><span class="gigs__info">70s / 80s</span><span>Kampen</span></li>
+        <li><time>26-07-2025</time><strong>Prive feest (verjaardag)</strong><span class="gigs__info">urban / allround</span><span>Kampen</span></li> <!-- verjaardag julian-->
+        <li><time>11-07-2025</time><strong>Av isala Kamp 2025</strong><span class="gigs__info">allround jeugd</span><span>ijsselmuiden</span></li>
+        <li><time>04-07-2025</time><strong>Prive feest (verjaardag)</strong><span class="gigs__info">allround jeugd</span><span>ijsselmuiden</span></li>
+        <li><time>27-06-2025</time><strong>Beach Kampen</strong><span class="gigs__info">house / allround</span><span>Kampen</span></li>
+        <li><time>06/07-06-2025</time><strong>Dag van het onderdijks</strong><span class="gigs__info">allround jeugd</span><span>Kampen</span></li>
+        <li><time>12-02-2025</time><strong>Schoolfeest 1e en 2e klas</strong><span class="gigs__info">allround jeugd</span><span>Kampen</span></li>
+        <li><time>03-01-2025</time><strong>Nieuw jaar discozwemmen</strong><span class="gigs__info">allround jeugd</span><span>Kampen</span></li>
+        <li><time>01-11-2024</time><strong>Halloween discozwemmen</strong><span class="gigs__info">allround jeugd</span><span>Kampen</span></li>
+        <li><time>12-07-2024</time><strong>Av isala Kamp 2024</strong><span class="gigs__info">allround jeugd</span><span>Hattem</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOTO'S: images/gig1.jpg … gig5.jpg ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label label--accent">05 — Foto's</span>
+      <div><h2>Achter de draaitafels</h2></div>
+    </div>
+    <div class="photos reveal"><figure class="wide"><img src="images/gig1.jpg" alt="Placeholder gigfoto 1" loading="lazy"></figure><figure><img src="images/gig2.jpg" alt="Placeholder gigfoto 2" loading="lazy"></figure><figure><img src="images/gig3.jpg" alt="Placeholder gigfoto 3" loading="lazy"></figure><figure><img src="images/gig4.jpg" alt="Placeholder gigfoto 4" loading="lazy"></figure><figure><img src="images/gig5.jpg" alt="Placeholder gigfoto 5" loading="lazy"></figure></div>
+  </div>
+</section>
+
+<!-- ===== CROSS-PROMO naar LED ===== -->
+<section>
+  <div class="wrap">
+    <div class="cross reveal" style="--accent:var(--led)">
+      <div>
+        <span class="label label--accent">Extra</span>
+        <h2>Ik verlicht mijn eigen sets</h2>
+        <p class="lead">Boek de DJ-set met een LED-show erbij — muziek en licht van één persoon.</p>
+      </div>
+      <div class="btn-row"><a class="btn btn--led" href="contact.html?type=both">Boek DJ + LED</a><a class="btn" href="led-shows.html">LED-projecten</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <a class="footer__big" href="https://instagram.com/led.shows" target="_blank" rel="noopener">@led.shows ↗</a>
+    <div class="footer__row">
+      <nav aria-label="Footer">
+        <a class="label" href="index.html">Home</a>
+        <a class="label" href="dj.html">DJ Olaf</a>
+        <a class="label" href="led-shows.html">LED.shows</a>
+        <a class="label" href="about.html">Over</a>
+        <a class="label" href="contact.html">Contact</a>
+      </nav>
+      <span class="label">© <span id="year"></span> DJ Olaf — LED.shows</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
